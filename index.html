@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e7c34" />
+  <!-- ============================================
+       PAGE TITLE - CHANGE THIS TO UPDATE TITLE
+       ============================================ -->
+  <title>Khan Aluminium Fabrication — Premium Doors, Windows & Glass Solutions | Corlim, Goa</title>
+  <meta name="description" content="Khan Aluminium Fabrication — premium aluminum doors, windows, railings, kitchen cabinets, glass partitions & interior fabrication in Corlim, Goa. Free site visit. Call Ahamad Khan: 8999430675." />
+  <meta name="keywords" content="aluminium fabrication goa, sliding windows corlim, domal windows, upvc windows, glass partitions, steel railings, kitchen cabinets goa, false ceiling, toughened glass, khan aluminium, ahamad khan corlim" />
+  <meta name="author" content="Khan Aluminium Fabrication" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231e7c34'/%3E%3Ctext x='50' y='66' font-family='Arial' font-size='56' font-weight='bold' text-anchor='middle' fill='white'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Animation libraries -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <!-- ============================================
+       CUSTOM CSS FILE - LINK TO YOUR STYLESHEET
+       ============================================ -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       TOP BAR - MODIFIED: "Mon-Sat" changed to "Open 7 Days"
+       ============================================ -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <!-- CHANGE PHONE NUMBERS HERE -->
+        <a href="tel:8999430675"><i class="fa-solid fa-phone"></i> 8999430675</a>
+        <a href="tel:9616946379"><i class="fa-solid fa-phone"></i> 9616946379</a>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fa-solid fa-location-dot"></i> Corlim, Goa</span>
+        <!-- ============================================
+             MODIFIED: Changed "Mon – Sat" to "Open 7 Days"
+             To change back, replace "Open 7 Days" with "Mon – Sat"
+             ============================================ -->
+        <span><i class="fa-regular fa-clock"></i> Open 7 Days | 9 AM – 8 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       HEADER - MODIFIED: Business name in green, single line
+       ============================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-top">
+        <!-- ============================================
+             MODIFIED: Business name now shows "Khan Aluminium Fabrication"
+             in green on a single line
+             - To change business name, edit the text in .logo-business-name
+             - Color is controlled by CSS variable --primary (green)
+             ============================================ -->
+        <a href="#home" class="logo" aria-label="Khan Aluminium Fabrication Home">
+          <span class="logo-mark">K</span>
+          <span class="logo-text">
+            <span class="logo-business-name">Khan Aluminium Fabrication</span>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <a href="tel:8999430675" class="header-call-btn">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ICON NAV BAR - STYLING UNCHANGED -->
+      <nav class="icon-nav" aria-label="Primary">
+        <a href="#home" class="icon-nav-item active">
+          <i class="fa-solid fa-house"></i>
+          <span class="label-text">Home</span>
+        </a>
+        <a href="#about" class="icon-nav-item">
+          <i class="fa-solid fa-users-gear"></i>
+          <span class="label-text">About Us</span>
+        </a>
+        <a href="#services" class="icon-nav-item">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span class="label-text">Services</span>
+        </a>
+        <a href="#contact" class="icon-nav-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span class="label-text">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- OVERLAY + VERTICAL SLIDING TAB -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="vertical-tab" id="verticalTab" aria-label="Full menu">
+    <div class="vt-header">
+      <span class="vt-logo">Khan Aluminium</span>
+      <button class="vt-close" id="vtClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="vt-nav">
+      <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fa-solid fa-users-gear"></i> About Us</a></li>
+      <li>
+        <a href="#services" id="vtServicesToggle">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          Services
+          <i class="fa-solid fa-chevron-down vt-toggle" id="vtToggleIcon"></i>
+        </a>
+        <ul class="vt-sub" id="vtSub">
+          <li><a href="#services">Sliding Windows</a></li>
+          <li><a href="#services">Domal Windows</a></li>
+          <li><a href="#services">uPVC Windows</a></li>
+          <li><a href="#services">Glass Partitions</a></li>
+          <li><a href="#services">Doors (Wooden / PVC / Fiber)</a></li>
+          <li><a href="#services">Railings (Steel / TSS)</a></li>
+          <li><a href="#services">Kitchen Cabinets</a></li>
+          <li><a href="#services">Glass Work</a></li>
+          <li><a href="#services">False / PVC Ceiling</a></li>
+          <li><a href="#services">Home Furniture</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact"><i class="fa-solid fa-phone-volume"></i> Contact Us</a></li>
+    </ul>
+    <div class="vt-footer">
+      <a href="tel:8999430675"><i class="fa-solid fa-phone"></i> 8999430675</a>
+      <a href="tel:9616946379"><i class="fa-solid fa-phone"></i> 9616946379</a>
+      <div style="margin-top:12px;font-size:12px;opacity:.75;">Corlim Main Road, Near Chetan Bar,<br>Tiswadi Corlim, Goa - 403110</div>
+    </div>
+  </aside>
+
+  <!-- ============================================
+       HERO SECTION - MODIFIED: Added decorative graphics
+       ============================================ -->
+  <section class="hero" id="home">
+    <!-- ============================================
+         DECORATIVE GRAPHICS - CSS-generated shapes
+         These elements create modern background graphics
+         without affecting page loading or responsiveness
+         ============================================ -->
+    <div class="hero-graphics">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      <div class="hero-shape hero-shape-4"></div>
+      <div class="hero-dots"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-top animate__animated animate__fadeInDown">
+        <i class="fa-solid fa-star"></i> Trusted Aluminium Fabrication in Corlim, Goa
+      </div>
+      <h1 class="animate__animated animate__fadeInDown animate__delay-1s">
+        Transform Your Space with <span class="highlight">Premium Aluminium Solutions</span>
+      </h1>
+      <p class="lead animate__animated animate__fadeIn animate__delay-1s">
+        Doors, windows, railings, glass partitions, kitchen cabinets &amp; complete interior fabrication — built with care, delivered on time.
+      </p>
+      <div class="hero-cta-row animate__animated animate__fadeInUp animate__delay-2s">
+        <a href="tel:8999430675" class="btn btn-primary hvr-pulse">
+          <i class="fa-solid fa-phone"></i> Get Free Quote
+        </a>
+        <a href="https://wa.me/918999430675?text=Hi%20Ahamad%2C%20I%27d%20like%20a%20quote%20for%20aluminium%20work" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+      <div class="hero-stats animate__animated animate__fadeIn animate__delay-2s">
+        <div>
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div>
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Quality Assured</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION - MODIFIED: New professional image
+       ============================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">About Us</span>
+        <h2>Craftsmanship You Can Trust</h2>
+        <p>We're not just another contractor — we're the team that treats your home like our own.</p>
+      </div>
+
+      <div class="about-wrap">
+        <!-- ============================================
+             MODIFIED: About section image replaced with
+             professional aluminium fabrication/workshop image
+             
+             TO CHANGE THIS IMAGE:
+             1. Replace the URL in the style attribute below
+             2. Or replace the background-image in CSS (.about-image)
+             
+             Suggested image sources:
+             - Your own workshop photo (recommended)
+             - Unsplash: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122
+             - Another option: https://images.unsplash.com/photo-1581092160607-ee22621dd758
+             ============================================ -->
+        <div class="about-image" data-aos="fade-right" 
+             style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80');"
+             role="img" 
+             aria-label="Khan Aluminium Fabrication workshop and professional team">
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h2>Hello, I'm Ahamad Khan</h2>
+          <p><strong class="logo-full-name">Khan Aluminium Fabrication</strong> is a trusted name in aluminium fabrication and interior solutions across Corlim, Goa. With over a decade of hands-on experience, we deliver premium-quality doors, windows, railings, glass partitions, kitchen cabinets, and full interior fabrication for homes and commercial spaces alike. Our commitment to precision craftsmanship, durable materials, and timely delivery has earned us the trust of 500+ satisfied clients. From a single window replacement to complete turnkey interiors — every project is handled with the same care and dedication, under the direct supervision of owner Ahamad Khan.</p>
+
+          <div class="owner-card">
+            <div class="owner-avatar">AK</div>
+            <div class="owner-info">
+              <strong>Ahamad Khan</strong>
+              <span>Owner & Founder</span>
+            </div>
+          </div>
+
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Address</strong>
+                <span>Corlim Main Road, Near Chetan Bar, Tiswadi Corlim, Goa - 403110</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:8999430675">8999430675</a> · <a href="tel:9616946379">9616946379</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <strong>Working Hours</strong>
+                <!-- ============================================
+                     MODIFIED: Changed "Mon – Sat" to "Open 7 Days"
+                     ============================================ -->
+                <span>Open 7 Days | 9:00 AM – 8:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================
+               SOCIAL MEDIA ICONS - Added with placeholder links
+               
+               TO CHANGE SOCIAL MEDIA LINKS:
+               1. Facebook: Replace the href URL starting with "https://facebook.com/yourpage"
+               2. Instagram: Replace the href URL starting with "https://instagram.com/yourpage"
+               3. WhatsApp: Replace the href URL with your actual WhatsApp link
+               ============================================ -->
+          <div class="social-row">
+            <!-- Instagram Link - CHANGE THIS URL TO YOUR INSTAGRAM -->
+            <a href="https://instagram.com/khanaluminiumgoa" target="_blank" rel="noopener" class="social-icon insta hvr-icon-bounce" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <!-- Facebook Link - CHANGE THIS URL TO YOUR FACEBOOK -->
+            <a href="https://facebook.com/khanaluminiumgoa" target="_blank" rel="noopener" class="social-icon fb hvr-icon-bounce" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/918999430675" target="_blank" rel="noopener" class="social-icon wa hvr-icon-bounce" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="dark-bg">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Our Services</span>
+        <h2>Everything Aluminium, Glass & Interior</h2>
+        <p>Tap any card to see it bigger. From a single window to a complete home makeover — we handle it all under one roof.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- TO CHANGE SERVICE IMAGES: Replace the src and href URLs with your image URLs -->
+        <a href="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="0">
+          <img src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=600&q=70" alt="Sliding Windows" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Sliding Windows</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=70" alt="Domal Windows" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Domal Windows</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=70" alt="uPVC Windows" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">uPVC Windows</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="150">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=70" alt="Glass Partition Fixing" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Glass Partition Fixing</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=70" alt="Wooden Door" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Wooden Door</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="250">
+          <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=600&q=70" alt="PVC Door" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">PVC Door</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=70" alt="Fiber Door" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Fiber Door</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="350">
+          <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=600&q=70" alt="Steel Railing" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Steel Railing</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=70" alt="Bathroom Shower Toughened Glass" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Bathroom Shower Toughened Glass</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1574871786514-46e9125bd9db?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="450">
+          <img src="https://images.unsplash.com/photo-1574871786514-46e9125bd9db?auto=format&fit=crop&w=600&q=70" alt="TSS Railing" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">TSS Railing</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="500">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=600&q=70" alt="PVC Ceiling" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">PVC Ceiling</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+
+        <a href="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="550">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=70" alt="Kitchen Cabinet & Home Furniture" loading="lazy">
+          <div class="service-overlay">
+            <div class="service-name">Kitchen Cabinet &amp; Home Furniture</div>
+            <div class="service-view"><i class="fa-solid fa-magnifying-glass-plus"></i> Tap to view</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Free consultation, free site visit, no obligation. Just a quick call.</p>
+      <div class="hero-cta-row" style="justify-content:center;">
+        <a href="tel:8999430675" class="btn hvr-grow"><i class="fa-solid fa-phone"></i> Call Ahamad Now</a>
+        <a href="https://wa.me/918999430675?text=Hi%20Ahamad%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener" class="btn btn-ghost hvr-grow"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION - Modified with social media icons
+       ============================================ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Let's Talk About Your Project</h2>
+        <p>Pick whichever way is easiest for you — call, WhatsApp, or fill in the form. We usually reply within an hour.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info-card" data-aos="fade-right">
+          <h3>Talk to Ahamad Directly</h3>
+          <p>Skip the middlemen. You'll deal with the owner from quote to handover.</p>
+
+          <div class="contact-actions">
+            <a href="https://wa.me/918999430675?text=Hi%20Ahamad%2C%20I%27d%20like%20a%20quote%20for%20aluminium%20work" target="_blank" rel="noopener" class="contact-action whatsapp hvr-grow">
+              <span class="icon-circle"><i class="fa-brands fa-whatsapp"></i></span>
+              <div>
+                <strong>WhatsApp Us</strong>
+                <span>Chat with us — fastest response</span>
+              </div>
+            </a>
+            <a href="tel:8999430675" class="contact-action call hvr-grow">
+              <span class="icon-circle"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Call 8999430675</strong>
+                <span>Tap to call on mobile</span>
+              </div>
+            </a>
+            <a href="tel:9616946379" class="contact-action call hvr-grow">
+              <span class="icon-circle"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Call 9616946379</strong>
+                <span>Alternate number</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- ============================================
+               SOCIAL MEDIA ICONS IN CONTACT SECTION
+               
+               TO CHANGE SOCIAL MEDIA LINKS:
+               1. Instagram: Replace href starting with "https://instagram.com/"
+               2. Facebook: Replace href starting with "https://facebook.com/"
+               ============================================ -->
+          <div class="social-row" style="margin-top:24px;">
+            <!-- Instagram Link - CHANGE THIS URL TO YOUR INSTAGRAM -->
+            <a href="https://instagram.com/khanaluminiumgoa" target="_blank" rel="noopener" class="social-icon insta hvr-icon-bounce" aria-label="Instagram" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <!-- Facebook Link - CHANGE THIS URL TO YOUR FACEBOOK -->
+            <a href="https://facebook.com/khanaluminiumgoa" target="_blank" rel="noopener" class="social-icon fb hvr-icon-bounce" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ============================================
+             QUICK INQUIRY FORM - MODIFIED: Placeholder changed
+             FROM: "e.g. Imran Khan"
+             TO: "Enter your name"
+             ============================================ -->
+        <form class="contact-form-card" id="contactForm" novalidate data-aos="fade-left">
+          <h3>Send a Quick Inquiry</h3>
+          <div class="form-row">
+            <label for="name">Your Name *</label>
+            <!-- ============================================
+                 MODIFIED: Changed placeholder from "e.g. Imran Khan" to "Enter your name"
+                 To change back, replace "Enter your name" with "e.g. Imran Khan"
+                 ============================================ -->
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="10-digit mobile number">
+          </div>
+          <div class="form-row">
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+          <div class="form-row">
+            <label for="service">Service You're Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>Sliding / Domal / uPVC Windows</option>
+              <option>Wooden / PVC / Fiber Doors</option>
+              <option>Steel / TSS Railings</option>
+              <option>Kitchen Cabinets</option>
+              <option>Glass Partitions / Shower Glass</option>
+              <option>False Ceiling / PVC Ceiling</option>
+              <option>Home Furniture / Custom Fabrication</option>
+              <option>Full Home Interior</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" placeholder="Briefly describe what you need — location, size, timeline…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit hvr-pulse">
+            Send Inquiry <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Thanks! We'll get back to you within an hour.
+          </div>
+        </form>
+      </div>
+
+      <!-- ADDRESS BAR WITH MAP -->
+      <div class="address-bar" data-aos="fade-up">
+        <div class="address-bar-text">
+          <h4><i class="fa-solid fa-location-dot"></i> Visit Our Workshop</h4>
+          <p><strong class="logo-full-name">Khan Aluminium Fabrication</strong><br>
+          Corlim Main Road, Near Chetan Bar,<br>
+          Tiswadi Corlim, Goa - 403110</p>
+          <p style="margin-top:14px;">
+            <a href="https://www.google.com/maps/search/?api=1&query=Khan+Aluminium+Fabrication+Corlim+Goa" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px;font-size:13px;">
+              <i class="fa-solid fa-directions"></i> Get Directions
+            </a>
+          </p>
+        </div>
+        <div class="address-bar-map">
+          <iframe
+            src="https://maps.google.com/maps?q=Corlim%2C%20Goa&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Khan Aluminium Fabrication Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER - Modified with social media icons
+       ============================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">
+            <span class="logo-mark">K</span>
+            <span class="logo-text">
+              <span class="logo-full-name">Khan Aluminium Fabrication</span>
+              <small>Corlim, Goa</small>
+            </span>
+          </div>
+          <p>Premium aluminium fabrication, glass work, and complete interior solutions for homes and offices across Goa.</p>
+          
+          <!-- ============================================
+               FOOTER SOCIAL MEDIA ICONS - Updated with links
+               
+               TO CHANGE SOCIAL MEDIA LINKS:
+               1. Instagram: Replace href starting with "https://instagram.com/"
+               2. Facebook: Replace href starting with "https://facebook.com/"
+               3. WhatsApp: Replace the wa.me URL with your actual WhatsApp link
+               ============================================ -->
+          <div class="footer-social">
+            <!-- Instagram Link - CHANGE THIS URL TO YOUR INSTAGRAM -->
+            <a href="https://instagram.com/khanaluminiumgoa" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <!-- Facebook Link - CHANGE THIS URL TO YOUR FACEBOOK -->
+            <a href="https://facebook.com/khanaluminiumgoa" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/918999430675" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="quick-links">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+            <li><a href="/design.md" target="_blank" rel="noopener"><i class="fa-solid fa-chevron-right"></i> Design System</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Sliding Windows</a></li>
+            <li><a href="#services">Domal Windows</a></li>
+            <li><a href="#services">uPVC Windows</a></li>
+            <li><a href="#services">Doors</a></li>
+            <li><a href="#services">Railings</a></li>
+            <li><a href="#services">Kitchen Cabinets</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:8999430675"><i class="fa-solid fa-phone" style="color:#ffd54f;"></i> 8999430675</a></li>
+            <li><a href="tel:9616946379"><i class="fa-solid fa-phone" style="color:#ffd54f;"></i> 9616946379</a></li>
+            <li><a href="https://wa.me/918999430675" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp Us</a></li>
+            <li style="margin-top:8px;font-size:13px;"><i class="fa-solid fa-location-dot" style="color:#ffd54f;"></i> Corlim Main Road, Near Chetan Bar,<br>Tiswadi Corlim, Goa - 403110</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Khan Aluminium Fabrication. All rights reserved. | Crafted with care for homes &amp; offices across Goa.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/918999430675?text=Hi%20Ahamad%2C%20I%27d%20like%20a%20quote%20for%20aluminium%20work" target="_blank" rel="noopener" class="float-whatsapp" aria-label="WhatsApp Khan Aluminium">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <span>We use cookies to improve your experience on our website. By continuing, you agree to our use of cookies.</span>
+      </div>
+      <div class="cookie-buttons">
+        <button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
+        <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCRIPTS - External libraries
+       ============================================ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  
+  <!-- ============================================
+       CUSTOM JavaScript FILE
+       ============================================ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
