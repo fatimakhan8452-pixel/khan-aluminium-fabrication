@@ -35,38 +35,27 @@
 <body>
 
   <!-- ============================================
-       TOP BAR - MODIFIED: "Mon-Sat" changed to "Open 7 Days"
+       TOP BAR
        ============================================ -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
-        <!-- CHANGE PHONE NUMBERS HERE -->
         <a href="tel:8999430675"><i class="fa-solid fa-phone"></i> 8999430675</a>
         <a href="tel:9616946379"><i class="fa-solid fa-phone"></i> 9616946379</a>
       </div>
       <div class="topbar-right">
         <span><i class="fa-solid fa-location-dot"></i> Corlim, Goa</span>
-        <!-- ============================================
-             MODIFIED: Changed "Mon – Sat" to "Open 7 Days"
-             To change back, replace "Open 7 Days" with "Mon – Sat"
-             ============================================ -->
         <span><i class="fa-regular fa-clock"></i> Open 7 Days | 9 AM – 8 PM</span>
       </div>
     </div>
   </div>
 
   <!-- ============================================
-       HEADER - MODIFIED: Business name in green, single line
+       HEADER
        ============================================ -->
   <header class="site-header" id="siteHeader">
     <div class="container">
       <div class="header-top">
-        <!-- ============================================
-             MODIFIED: Business name now shows "Khan Aluminium Fabrication"
-             in green on a single line
-             - To change business name, edit the text in .logo-business-name
-             - Color is controlled by CSS variable --primary (green)
-             ============================================ -->
         <a href="#home" class="logo" aria-label="Khan Aluminium Fabrication Home">
           <span class="logo-mark">K</span>
           <span class="logo-text">
@@ -84,7 +73,6 @@
         </div>
       </div>
 
-      <!-- ICON NAV BAR - STYLING UNCHANGED -->
       <nav class="icon-nav" aria-label="Primary">
         <a href="#home" class="icon-nav-item active">
           <i class="fa-solid fa-house"></i>
@@ -147,25 +135,27 @@
   </aside>
 
   <!-- ============================================
-       HERO SECTION - MODIFIED: Added decorative graphics
+       HERO SECTION
+       MODIFIED: badge text updated + new window-pane
+       grid / frame-corner / glint graphics replacing
+       the old floating gradient circles
        ============================================ -->
   <section class="hero" id="home">
-    <!-- ============================================
-         DECORATIVE GRAPHICS - CSS-generated shapes
-         These elements create modern background graphics
-         without affecting page loading or responsiveness
-         ============================================ -->
     <div class="hero-graphics">
-      <div class="hero-shape hero-shape-1"></div>
-      <div class="hero-shape hero-shape-2"></div>
-      <div class="hero-shape hero-shape-3"></div>
-      <div class="hero-shape hero-shape-4"></div>
-      <div class="hero-dots"></div>
+      <div class="hero-grid-lines"></div>
+      <div class="hero-corner hero-corner-tl"></div>
+      <div class="hero-corner hero-corner-br"></div>
+      <div class="hero-glint"></div>
     </div>
 
     <div class="container hero-content">
       <div class="hero-badge-top animate__animated animate__fadeInDown">
-        <i class="fa-solid fa-star"></i> Trusted Aluminium Fabrication in Corlim, Goa
+        <!-- ============================================
+             MODIFIED: badge text changed
+             FROM: "Trusted Aluminium Fabrication in Corlim, Goa"
+             TO:   "10+ Years of Trusted Craftsmanship in Goa"
+             ============================================ -->
+        <i class="fa-solid fa-star"></i> 10+ Years of Trusted Craftsmanship in Goa
       </div>
       <h1 class="animate__animated animate__fadeInDown animate__delay-1s">
         Transform Your Space with <span class="highlight">Premium Aluminium Solutions</span>
@@ -199,7 +189,7 @@
   </section>
 
   <!-- ============================================
-       ABOUT SECTION - MODIFIED: New professional image
+       ABOUT SECTION
        ============================================ -->
   <section id="about">
     <div class="container">
@@ -210,19 +200,6 @@
       </div>
 
       <div class="about-wrap">
-        <!-- ============================================
-             MODIFIED: About section image replaced with
-             professional aluminium fabrication/workshop image
-             
-             TO CHANGE THIS IMAGE:
-             1. Replace the URL in the style attribute below
-             2. Or replace the background-image in CSS (.about-image)
-             
-             Suggested image sources:
-             - Your own workshop photo (recommended)
-             - Unsplash: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122
-             - Another option: https://images.unsplash.com/photo-1581092160607-ee22621dd758
-             ============================================ -->
         <div class="about-image" data-aos="fade-right" 
              style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80');"
              role="img" 
@@ -260,32 +237,18 @@
               <i class="fa-regular fa-clock"></i>
               <div>
                 <strong>Working Hours</strong>
-                <!-- ============================================
-                     MODIFIED: Changed "Mon – Sat" to "Open 7 Days"
-                     ============================================ -->
                 <span>Open 7 Days | 9:00 AM – 8:00 PM</span>
               </div>
             </div>
           </div>
 
-          <!-- ============================================
-               SOCIAL MEDIA ICONS - Added with placeholder links
-               
-               TO CHANGE SOCIAL MEDIA LINKS:
-               1. Facebook: Replace the href URL starting with "https://facebook.com/yourpage"
-               2. Instagram: Replace the href URL starting with "https://instagram.com/yourpage"
-               3. WhatsApp: Replace the href URL with your actual WhatsApp link
-               ============================================ -->
           <div class="social-row">
-            <!-- Instagram Link - CHANGE THIS URL TO YOUR INSTAGRAM -->
             <a href="https://www.instagram.com/ahmadullah6081?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-icon insta hvr-icon-bounce" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <!-- Facebook Link - CHANGE THIS URL TO YOUR FACEBOOK -->
             <a href="https://www.facebook.com/share/1DHQGNMPCB/" target="_blank" rel="noopener" class="social-icon fb hvr-icon-bounce" aria-label="Facebook">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <!-- WhatsApp Link -->
             <a href="https://wa.me/918999430675" target="_blank" rel="noopener" class="social-icon wa hvr-icon-bounce" aria-label="WhatsApp">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -305,7 +268,6 @@
       </div>
 
       <div class="services-grid">
-        <!-- TO CHANGE SERVICE IMAGES: Replace the src and href URLs with your image URLs -->
         <a href="https://res.cloudinary.com/wa9kzoth/image/upload/f_auto,q_auto/sliding_Window_uzscpr" class="service-card glightbox" data-gallery="services" data-aos="fade-up" data-aos-delay="0">
           <img src="https://res.cloudinary.com/wa9kzoth/image/upload/f_auto,q_auto/sliding_Window_uzscpr" alt="Sliding Windows" loading="lazy">
           <div class="service-overlay">
@@ -444,7 +406,7 @@
   </section>
 
   <!-- ============================================
-       CONTACT SECTION - Modified with social media icons
+       CONTACT SECTION
        ============================================ -->
   <section id="contact">
     <div class="container">
@@ -483,38 +445,20 @@
             </a>
           </div>
 
-          <!-- ============================================
-               SOCIAL MEDIA ICONS IN CONTACT SECTION
-               
-               TO CHANGE SOCIAL MEDIA LINKS:
-               1. Instagram: Replace href starting with "https://instagram.com/"
-               2. Facebook: Replace href starting with "https://facebook.com/"
-               ============================================ -->
           <div class="social-row" style="margin-top:24px;">
-            <!-- Instagram Link - CHANGE THIS URL TO YOUR INSTAGRAM -->
             <a href="https://www.instagram.com/ahmadullah6081?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-icon insta hvr-icon-bounce" aria-label="Instagram" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <!-- Facebook Link - CHANGE THIS URL TO YOUR FACEBOOK -->
             <a href="https://www.facebook.com/share/1DHQGNMPCB/" target="_blank" rel="noopener" class="social-icon fb hvr-icon-bounce" aria-label="Facebook">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
           </div>
         </div>
 
-        <!-- ============================================
-             QUICK INQUIRY FORM - MODIFIED: Placeholder changed
-             FROM: "e.g. Imran Khan"
-             TO: "Enter your name"
-             ============================================ -->
         <form class="contact-form-card" id="contactForm" novalidate data-aos="fade-left">
           <h3>Send a Quick Inquiry</h3>
           <div class="form-row">
             <label for="name">Your Name *</label>
-            <!-- ============================================
-                 MODIFIED: Changed placeholder from "e.g. Imran Khan" to "Enter your name"
-                 To change back, replace "Enter your name" with "e.g. Imran Khan"
-                 ============================================ -->
             <input type="text" id="name" name="name" required placeholder="Enter your name">
           </div>
           <div class="form-row">
@@ -553,7 +497,6 @@
         </form>
       </div>
 
-      <!-- ADDRESS BAR WITH MAP -->
       <div class="address-bar" data-aos="fade-up">
         <div class="address-bar-text">
           <h4><i class="fa-solid fa-location-dot"></i> Visit Our Workshop</h4>
@@ -579,7 +522,7 @@
   </section>
 
   <!-- ============================================
-       FOOTER - Modified with social media icons
+       FOOTER
        ============================================ -->
   <footer>
     <div class="container">
@@ -594,20 +537,9 @@
           </div>
           <p>Premium aluminium fabrication, glass work, and complete interior solutions for homes and offices across Goa.</p>
           
-          <!-- ============================================
-               FOOTER SOCIAL MEDIA ICONS - Updated with links
-               
-               TO CHANGE SOCIAL MEDIA LINKS:
-               1. Instagram: Replace href starting with "https://instagram.com/"
-               2. Facebook: Replace href starting with "https://facebook.com/"
-               3. WhatsApp: Replace the wa.me URL with your actual WhatsApp link
-               ============================================ -->
           <div class="footer-social">
-            <!-- Instagram Link - CHANGE THIS URL TO YOUR INSTAGRAM -->
             <a href="https://www.instagram.com/ahmadullah6081?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <!-- Facebook Link - CHANGE THIS URL TO YOUR FACEBOOK -->
             <a href="https://www.facebook.com/share/1DHQGNMPCB/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <!-- WhatsApp Link -->
             <a href="https://wa.me/918999430675" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
@@ -676,16 +608,11 @@
   </div>
 
   <!-- ============================================
-       SCRIPTS - External libraries
+       SCRIPTS
        ============================================ -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  
-  <!-- ============================================
-       CUSTOM JavaScript FILE
-       ============================================ -->
   <script src="script.js"></script>
 
 </body>
 </html>
-
